@@ -8,7 +8,7 @@ use std::{thread, time};
 struct Args {
     #[clap(short, long, value_parser, default_value_t = false)]
     quiet: bool,
-    #[clap(short, long = "min_delay", value_parser, default_value_t = 0u32)]
+    #[clap(short, long = "min-delay", value_parser, default_value_t = 0u32)]
     min_delay_s: u32,
     #[clap(value_parser)]
     max_delay_s: u32,
